@@ -9,9 +9,31 @@ import pytesseract
 from PIL import Image
 from gtts import gTTS
 from googletrans import Translator
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-image: url("https://i.pinimg.com/736x/8e/15/74/8e157420a38121610c63678b6ea86f33.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+      }
 
+        .st-cb, .st-af, .st-ag, .stMarkdown, .stText, .stWrite, .stRadio>div>label, 
+        .stSelectbox>div>label, .stCheckbox>div>label, .stButton>button, 
+        .css-1aumxhk, .css-10trblm, .stSidebar, .stSidebar .css-1aumxhk, 
+        .stSidebar .stMarkdown, .stSidebar .stText, .stSidebar .stWrite {
+            color: #8B008B !important;
+        }
+        .css-1aumxhk, .css-10trblm, .stHeader, .stSubheader, .stTitle {
+            color: white !important;
+        }
 
-text=" "
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 def text_to_speech(input_language, output_language, text, tld):
     translation = translator.translate(text, src=input_language, dest=output_language)
