@@ -1,1 +1,1 @@
-# OCRconAUDIO
+# Reconocimiento Óptico de Caracteres
