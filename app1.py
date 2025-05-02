@@ -2,6 +2,7 @@ import streamlit as st
 import os
 import time
 import glob
+import os
 import cv2
 import numpy as np
 import pytesseract
